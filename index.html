@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JeremiasMonje</title>
+    <link rel="shortcut icon" href="./assets/user-secret-solid.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- INICIO -->
+
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1><i class="fa-solid fa-user-secret"></i></h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#certificados" onclick="seleccionar(this)">CERTIFICADOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    
+                </div>
+            </header>
+            <div class="presentacion">
+                
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Jeremias Monje</span>, Desarrollador Web</h2>
+                <p class="descripcion"> </p>
+                <a href="#portfolio" id="ir-a-portafolio">Ir a Portafolio</a>
+                <ul id="ul">
+                    <li style="--clr: #020e1e;" id="li">
+                        <a href="https://github.com/jeremonje" target="_blank" id="a"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li style="--clr: #ff0000;" id="li">
+                        <a href="mailto:jeremonjee@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail"  target="_blank" id="a"><i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                    <li style="--clr: #1da1f2;" id="li">
+                        <a href="https://www.linkedin.com/in/jeremias-monje-580b14242/" target="_blank" id="a"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <!--<li style="--clr: #c32aa3;" id="li">
+                        <a href="https://www.instagram.com/" target="_blank" id="a"><i class="fa-brands fa-instagram"></i></a>
+                    </li>-->
+                    <li style="--clr: #25d366;" id="li">
+                        <a href="https://wa.me/+543518041192 " target="_blank" id="a"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <section id="contacto">
+                
+            </section>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="image/" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Jeremias Monje</span> </h2>
+            <h3>Desarrollador Web</h3>
+            <p>Bienvenidos a mi portfolio personal. soy desarrollador front-end, soy de Argentina,Cordoba(capital), estoy metido en el mundo de programacion hace más de un año sigo cpacitandome dia tras dia mi objetivos hoy en dia son conseguir mi primer puesto laboral en programacion y llegar a ser un desarrolador full stack.</p>
+            <p>Actualmente sigo creando paginas en el front-end para ganar más experiencia y estoy metiendome en el mundo del back-end.</p>
+            
+            <a id="download_cv" class="download__link" href="./assets/Curriculum jeremias monje(3).png" download="jeremias-monje-CV" aria-label="Descargar CV">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-js"></i></span>
+                <!--<span class="icono"> <i class="fa-brands fa-github"><a href="http://" target="_blank" rel="noopener noreferrer"></a> </i></span>-->
+                <h4>Javascript</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li> Curso Realizado en Coderhouse</li>
+                    
+                </ul>
+                <p><br> JavaScript es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web.     </p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-react"></i></span>
+                <h4>React js</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li> Curso Realizado en Coderhouse</li>
+                </ul>
+                <p>React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Frontend developer</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li> Curso Realizado en Platzi</li>
+                </ul>
+                <p>El desarrollo web Front-end consiste en la conversión de datos en una interfaz gráfica para que el usuario pueda ver e interactuar con la información de forma digital usando HTML, CSS y JavaScript.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-js"></i></span>
+                <h4>Ecmascript</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li> Curso Realizado en Platzi</li>
+                </ul>
+                <p>Cuando hablamos de ECMAScript, determina cómo emplear el lenguaje Javascript, que permite a los fabricantes de software desarrollar las herramientas adecuada para interpretarlo correctamente.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-brands fa-react"></i></span>
+                <h4>Practico de React js</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li> Curso Realizado en Platzi</li>
+                </ul>
+                <p>React es una biblioteca de JavaScript declarativa, eficiente y flexible para construir interfaces de usuario. Permite componer IUs complejas de pequeñas y aisladas piezas de código llamadas “componentes”.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Next js</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li> Curso Realizado en Platzi</li>
+                </ul>
+                <p>Es un marco web de desarrollo front-end de React de código abierto creado por Vercel que habilita funcionalidades como la representación del lado del servidor y la generación de sitios web estáticos para aplicaciones web basadas en React.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <section id="certificados">
+    <div class="contenedor-skills" id="skills">
+        <h3>CERTIFICADOS </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript </p>
+                <a href="./assets/62d1f603d0bedf001914d135 (2).png" target="_blank" rel="noopener noreferrer"><p class="ver-certificados">VER CERTIFICADO</p></a>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>React js </p>
+                <a href="./assets/634dae8dd0bb0c000f9596e6.png" target="_blank" rel="noopener noreferrer"><p class="ver-certificados">VER CERTIFICADO</p></a>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Cursos en Platzi </p>
+                <a href="https://platzi.com/p/jeremias17833/" target="_blank" rel="noopener noreferrer"><p class="ver-certificados">VER CERTIFICADOS</p></a>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+    
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="https://images.pexels.com/photos/4914807/pexels-photo-4914807.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                </a>
+                <div class="info">
+                    <h4>SNKRS</h4>
+                    <p>Tienda de zapatillas</p>
+                    <span class="icono"> <i class="fa-brands fa-github"><a href="https://github.com/jeremonje/SNKRS-Monje" target="_blank" rel="noopener noreferrer"></a> </i></span>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="https://images.pexels.com/photos/4401813/pexels-photo-4401813.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                </a>
+                <div class="info">
+                    <h4>urbanswing</h4>
+                    <p>Tienda de boxeo</p>
+                    <span class="icono"> <i class="fa-brands fa-github"><a href="https://github.com/jeremonje/proyectofinal-js" target="_blank" rel="noopener noreferrer"></a> </i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2022 <br> @JeremiasMonje</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
